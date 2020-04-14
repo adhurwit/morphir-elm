@@ -21,5 +21,6 @@ WORKDIR /usr/src/app/examples
 RUN elm make Main.elm --output=Main.js
 RUN npm install
 
-
+EXPOSE 3000
+CMD [ "node", "DaprAppShell.js" ]
 
